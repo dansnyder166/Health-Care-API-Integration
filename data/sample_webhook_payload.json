@@ -1,0 +1,107 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "timestamp": "2026-03-15T14:30:00Z",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-101",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2339-0",
+              "display": "Glucose [Mass/volume] in Blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pat-riverside-001",
+          "display": "Garcia, Ana"
+        },
+        "effectiveDateTime": "2026-03-15T14:22:00Z",
+        "valueQuantity": {
+          "value": 95,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "identifier": [
+          {
+            "system": "https://riverside.example.org/accession",
+            "value": "RC-2026-044871"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-102",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6299-2",
+              "display": "Urea nitrogen [Mass/volume] in Blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pat-riverside-001",
+          "display": "Garcia, Ana"
+        },
+        "effectiveDateTime": "2026-03-15T14:22:00Z",
+        "valueQuantity": {
+          "value": 18,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "identifier": [
+          {
+            "system": "https://riverside.example.org/accession",
+            "value": "RC-2026-044872"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-101-corrected",
+        "status": "corrected",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2339-0",
+              "display": "Glucose [Mass/volume] in Blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pat-riverside-001",
+          "display": "Garcia, Ana"
+        },
+        "effectiveDateTime": "2026-03-15T14:22:00Z",
+        "issued": "2026-03-15T15:01:00Z",
+        "valueQuantity": {
+          "value": 98,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "identifier": [
+          {
+            "system": "https://riverside.example.org/accession",
+            "value": "RC-2026-044871"
+          }
+        ]
+      }
+    }
+  ]
+}
